@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <style>
+            h1{
+                width:300px;
+                height:30px;
+            }
+            body{
+                width: 200px;
+            }
+            #tier_begin{
+                width: 30px;
+                height: 20px;
+            }
+            #tier_end{
+                width: 30px;
+                height: 20px;
+            }
+            #solvers_begin{
+                width: 50px;
+                height: 20px;
+            }
+            #solvers_end{
+                width: 50px;
+                height: 20px;
+            }
+            #byme{
+                position: relative;
+                top: 3px;
+            }
+            select{
+                width: 100px;
+                height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>백준 랜덤 디펜스</h1>
+        <div id="tier">
+            티어: 
+            <input type="text" id="tier_begin" maxlength="2">
+            ~
+            <input type="text" id="tier_end" maxlength="2">
+        </div>
+        <br>
+        <div id="number_of_solvers">
+            푼 사람 수: 
+            <input type="text" id="solvers_begin">
+            ~
+            <input type="text" id="solvers_end">
+        </div>
+        <br>
+        <div id="exclude">
+            내가 푼 문제 제외:
+            <input type="checkbox" id="byme" checked="on">
+        </div>
+        <br>
+        <div id="references">
+            출처: 
+            <select name="ref" >
+                <option value="none">== 선택 ==</option>
+                <option value="icpc">icpc</option>
+                <option value="regionals">regionals</option>
+                <option value="contest">contest</option>
+                <option value="oi">oi</option>
+              </select>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

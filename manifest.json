@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+ 
+  "name": "BOJ Random Defense",
+  "description": "BOJ Random Defense",
+  "version": "1.0",
+ 
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions":[
+    "https://*.solved.ac/*",
+    "https://*.www.acmicpc.net/*"
+  ]
+}
